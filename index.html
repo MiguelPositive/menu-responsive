@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Menu responsivo</title>
+  </head>
+  <body class="relative bg-fondo font-poppins overflow-hidden">
+    <nav
+      class="flex justify-between items-center pr-[calc(2rem+1vw)] pl-[calc(1rem+1vw)] text-white w-screen h-14 overflow-hidden desktop:pr-[calc(20rem+1vw)] 1000px:pr-[calc(18rem+1vw)] 1200px:pr-[calc(14rem+1vw)]"
+    >
+      <div class="logo flex items-center cursor-pointer">
+        <div
+          class="img-logo w-[calc(2rem+0.5em)] h-[calc(2rem+0.5em)] bg-logo bg-cover bg-center mr-[calc(0.5rem+0.2vw)]"
+        ></div>
+        <h2 class="text-[calc(0.9rem+0.5em)]">tailwindcss</h2>
+      </div>
+
+      <div class="flex justify-end w-2/4">
+        <div
+          class="absolute top-[calc(3rem+0.5em)] -right-full w-2/3 h-screen flex flex-col gap-10 font-black text-[calc(0.6rem+0.5em)] text-bold bg-fondoMenu 400px:w-2/5 desktop:block opacity-90 desktop:static desktop:flex desktop:flex-row desktop:justify-between desktop:h-auto desktop:bg-fondo"
+          id="menu"
+        >
+          <a
+            class="transition-all duration-200 text-center pt-5 desktop:pt-0 hover:text-teal-400"
+            href="#"
+            >Docs</a
+          >
+          <a
+            class="text-center transition-all duration-200 hover:text-teal-400"
+            href="#"
+            >Components</a
+          >
+          <a
+            class="text-center transition-all duration-200 hover:text-teal-400"
+            href="#"
+            >Blog</a
+          >
+          <a
+            class="text-center transition-all duration-200 hover:text-teal-400"
+            href="#"
+            >Showcase</a
+          >
+        </div>
+
+        <div
+          class="cursor-pointer desktop:hidden animate__animated text-[calc(1rem+0.5em)]"
+          id="btn-mobile"
+        >
+          <i class="bi bi-list" id="logo-btn"></i>
+        </div>
+      </div>
+    </nav>
+    <hr class="opacity-20" />
+    <script src="./index.js"></script>
+  </body>
+</html>
